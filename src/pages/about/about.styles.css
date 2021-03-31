@@ -1,0 +1,21 @@
+.about {
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+.profile {
+    max-width: 18em !important;
+}
+
+.my-details {
+    background-color: transparent;
+}
+.text {
+    text-align: justify;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.font-details {
+    font-size: 3em;
+    font-weight: 500;
+    color: rgba(35, 29, 90, 0.97);
+}
