@@ -18,7 +18,7 @@ const About = () => {
                         {/* profile pic*/}
                         <Col xs={12} md={6}>
                             <Row className="justify-content-center mb-2 mr-2 ">
-                                <Image src={arif} thumbnail className="profile" alt="pic" />
+                                <Image className="profile justify-content-end" alt="profile" src={arif} thumbnail fluid />
                             </Row>
                         </Col>
 
@@ -28,15 +28,17 @@ const About = () => {
                                 <p className='text'>
                                     Hi there! I am <strong>&nbsp;Md Syedul Arif</strong> <br />
                                     <br />
-                                    A passionate Full-stack Developer. I have been studying development for last 2.5 years.  I have experience working with React.js, Redux, Asp.Net Core Mvc and  Sql Server.
+                                    A passionate Full-stack Developer. I have been studying web development for last 2.5 years.  I have experience working with React.js, Redux, Asp.Net Core Mvc and  Sql Server.
+                                    <br />
+                                    <br />
+                                    In 2019 December, I have successfully completed my .Net Development training from Utbildning Nörd, Övertorneä, Sweden and i have aquired MCSA (Microsoft Certified Solution Associate) certification.
+                                    <br />
+                                    <br />
+                                    I am most passionate about developing software using .Net. I prioritize readable and well-documented code.
                                     <br /><br />
-                                    In 2019 December, I have successfully completed my .Net Development traing from Utbildning Nörd, Övertorneä, Sweden.
-                                    <br /><br />
-                                    I am constantly learning new things include gaining more experience with Mongodb, React Js, Express Js and Node js by doing Udemy Course. I am most passionate about developing software using .Net. I prioritize readable, well-documented code.
-                                    <br /><br />I love learning about new technologies, what problems are they solving and How can I use them to build better and scalable products.
                                 </p>
                             </Row>
-
+                            <br />
                             <Row>
                                 {/*buttons */}
                                 <Col className="d-flex justify-content-center flex-wrap">

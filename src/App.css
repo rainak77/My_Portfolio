@@ -8,6 +8,14 @@ hr {
         rgba(0, 0, 0, 0)
     );
 }
+
+.container-box {
+    width: 80%;
+    background-color: transparent;
+    position: relative;
+    z-index: 9;
+}
+
 .particles-box {
     position: absolute;
     top: 0;
@@ -15,4 +23,9 @@ hr {
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+.font-details {
+    font-size: 3em;
+    font-weight: 500;
+    color: rgba(35, 29, 90, 0.97);
 }

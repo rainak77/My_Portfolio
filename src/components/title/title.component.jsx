@@ -9,7 +9,7 @@ const MyTitleMessage = styled.h1`
   margin-top: -125px;
   text-align: center;
   
-  .heading {
+  div {
     color: ${props => props.theme.textColor};
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
