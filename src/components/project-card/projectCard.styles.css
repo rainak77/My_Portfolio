@@ -1,7 +1,6 @@
 /* projects*/
 .projects {
-    height: 72vh;
-    padding-top: 30px;
+    min-height: 80vh;
     /* overflow-y: auto; */
 }
 .projectcard__wrapper {
@@ -42,8 +41,9 @@
 .projects__navbar > div {
     margin: 0 10px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 .active_item {
-    color: teal;
+    color: rgb(250, 250, 250);
 }

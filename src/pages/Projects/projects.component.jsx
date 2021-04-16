@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import data_projects from "../../assets/data/projects-data";
 import ProjectCard from '../../components/project-card/ProjectCard';
-import './projects.style.css';
 
 export const Projects = () => {
     const [projects, setProjects] = useState(data_projects);
@@ -25,12 +24,12 @@ export const Projects = () => {
 
                 <div className="row">
                     {
-
                         projects.map(project =>
                             <ProjectCard key={project.name} project={project} />
                         )
                     }
                 </div>
+                <hr />
             </div>
         </div>
     );
