@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Container from 'react-bootstrap/Container';
 
 // skills
-import { skills } from "./skills-data";
+import { skills } from "../../assets/data/skills-data";
 
 import "./skills.styles.css";
 
@@ -15,7 +15,7 @@ const Skills = () => {
     return (
         <div className="pt-3 pb-3" id="skills">
             <h1 className="text-center font-details-b pb-4">TECH SKILLS</h1>
-            <Container rounded>
+            <Container>
                 <CardDeck style={{ justifyContent: 'center' }}>
                     <Row className="d-flex justify-content-around ">
                         {/* Frontend */}

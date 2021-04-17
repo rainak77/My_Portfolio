@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import data_projects from "../../assets/data/projects-data";
-import ProjectCard from '../../components/project-card/ProjectCard';
+import ProjectCard from '../../components/project-card/ProjectCard.component';
 
 export const Projects = () => {
     const [projects, setProjects] = useState(data_projects);
@@ -12,7 +12,7 @@ export const Projects = () => {
         setActive(name);
     };
     return (
-        <div className="pt-3 pb-3" id="skills">
+        <div className="pt-3 pb-3" id="projects">
             <h1 className="text-center font-details-b pb-4">PROJECTS</h1>
             <div className="container projects">
                 <div className="projects__navbar">

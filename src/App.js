@@ -4,17 +4,19 @@ import './App.css';
 import Mycarousal from './components/my-carousal/my-carousal.component';
 import MyNavbar from './components/my-navbar/mynavbar.component';
 import Title from './components/title/title.component';
-import About from './pages/about/about.component';
+import About from './pages/about/about';
 import background from './assets/img/background/background.webp';
 import './App.css';
 import Skills from './pages/skills/skills.component';
-import { Projects } from './pages/Projects/projects.component';
+import { Projects } from './pages/Projects/Projects';
 import Slide from "react-reveal/Slide";
+import Contact from './pages/contact/Contact';
+import Footer from './components/footer/footer.component';
 
 
 const App = () => {
   return (
-    <div >
+    <div className='' >
       <MyNavbar />
       <Mycarousal />
       <Title />
@@ -26,12 +28,17 @@ const App = () => {
 
       {/* Skills Section */}
       <Slide bottom duration={500}>
-        <hr /> 
+        <hr />
         <Skills />
       </Slide>
 
-      <Projects />
-
+      <Slide bottom duration={500}>
+        <Projects />
+      </Slide>
+      <Slide bottom duration={500}>
+        <Contact />
+      </Slide>
+      <Footer />
     </div>
   );
 };
