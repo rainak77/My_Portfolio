@@ -11,7 +11,7 @@ import Button from "react-bootstrap/Button";
 const About = () => {
     return (
         <div className="pt-5 pb-3 mt-3" id="about">
-            <h1 className="text-center font-details mt-2 ">ABOUT</h1>
+            <h1 className="text-center font-details mt-3 ">ABOUT</h1>
             <Container>
                 <Row className="pt-3 pb-5 align-items-center mt-3">
                     {/* profile pic*/}
