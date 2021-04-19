@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import './Contact.styles.css';
+import emailjs from 'emailjs-com';
 
 class Contact extends Component {
     state = {
@@ -14,6 +15,25 @@ class Contact extends Component {
         disabled: false,
         emailSent: null,
     };
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.setState({ disabled: true, emailSent: false });
+
+        emailjs.sendForm('service_eriva5e', 'template_ai7cuur', e.target, 'user_ijiqidcKPdGb52a7GQgna')
+            .then((result) => {
+                if (result.text === 'OK') {
+                    this.setState({name: '',
+                    email: '',
+                    message: '',
+                    disabled: false,
+                    emailSent: true})
+                }
+            }, (error) => {
+                console.log(error.text);
+            });
+
+    };
+
 
     render() {
         return (
@@ -26,7 +46,7 @@ class Contact extends Component {
                                 <h1 className='font-weight-bolder mx-auto'> Let's Talk  </h1>
                             </Row>
                             <Row className=" p-2 my-details rounded">
-                                <Form className='mx-auto'>
+                                <Form className='mx-auto' onSubmit={this.handleSubmit}>
                                     <Form.Group>
                                         <Form.Label htmlFor='fullname'>Full Name</Form.Label>
                                         <Form.Control id='fullname' name='name' type='text' value={this.state.name} onChange={(event) => this.setState({ name: event.target.value })} />
@@ -43,8 +63,9 @@ class Contact extends Component {
                                     <Button type='submit' disabled={this.state.disabled}>
                                         Send
                                     </Button>
-                                    {this.state.emailSent === 'true' && <p className='d-inline success-msg'>Email Sent Successfully</p>}
-                                    {this.state.emailSent === 'false' && <p className='d-inline err-msg'>Failed to sent Email</p>}
+
+                                    {this.state.emailSent === true && <p className='d-inline success-msg'>Email Sent Successfully</p>}
+                                    {this.state.emailSent === false && <p className='d-inline err-msg'>Failed to sent Email</p>}
 
                                 </Form>
                             </Row>

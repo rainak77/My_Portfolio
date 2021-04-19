@@ -1,12 +1,11 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../../assets/icons/logo.jpg';
 import './mynavbar.style.css';
 const MyNavbar = () => {
     return (
         <>
-            <Navbar fixed='top' collapseOnSelect expand="md" variant="dark" className='animate-navbar nav-theme justify-content-between'>
+            <Navbar fixed='top' collapseOnSelect expand="md" variant="dark" className='nav-theme justify-content-between'>
                 <Navbar.Brand href="#home">
                     <h3>PORTFOLIO</h3>
                 </Navbar.Brand>

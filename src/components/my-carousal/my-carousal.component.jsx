@@ -32,7 +32,7 @@ const Mycarousal = () => {
                     />
                 </Carousel.Item>
             </Carousel>
-            <Scrolldown />
+            <Scrolldown/>
         </div>
     );
 };
