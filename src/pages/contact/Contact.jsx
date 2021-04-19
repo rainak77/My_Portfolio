@@ -22,11 +22,13 @@ class Contact extends Component {
         emailjs.sendForm('service_eriva5e', 'template_ai7cuur', e.target, 'user_ijiqidcKPdGb52a7GQgna')
             .then((result) => {
                 if (result.text === 'OK') {
-                    this.setState({name: '',
-                    email: '',
-                    message: '',
-                    disabled: false,
-                    emailSent: true})
+                    this.setState({
+                        name: '',
+                        email: '',
+                        message: '',
+                        disabled: false,
+                        emailSent: true
+                    });
                 }
             }, (error) => {
                 console.log(error.text);
@@ -38,7 +40,7 @@ class Contact extends Component {
     render() {
         return (
             <div className="pt-3 pb-3" id="contact">
-                <h1 className="text-center font-details-b ">Contact</h1>
+                <h1 className="text-center font-details-b ">CONTACT</h1>
                 <Container>
                     <Row className="pt-3 pb-5 align-items-center justify-content-center">
                         <Col xs={12} md={8} >

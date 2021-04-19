@@ -1,6 +1,7 @@
 .about {
     background-color: transparent;
     font-size: 1.1em;
+    height: 100vh;
 }
 
 .profile {
@@ -15,4 +16,9 @@
     margin: 0 15px;
     text-align: justify;
     font-family: Georgia, "Times New Roman", Times, serif;
+}
+.font-details {
+    font-size: 3em;
+    font-weight: 500;
+    color: #231d5af8;
 }

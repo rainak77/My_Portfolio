@@ -15,6 +15,7 @@ import Footer from './components/footer/footer.component';
 
 
 const App = () => {
+ 
   return (
     <div className='' >
       <MyNavbar />
@@ -23,7 +24,7 @@ const App = () => {
 
       {/* About Section */}
       <Parallax blur={{ min: -30, max: 30 }} bgImage={background} bgImageAlt="background" strength={-200}>
-        <About />
+        <About/>
       </Parallax>
 
       {/* Skills Section */}
